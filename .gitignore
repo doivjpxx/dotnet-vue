@@ -1,0 +1,12 @@
+**/node_modules/**
+
+.DS_Store
+
+**/workspace.xml
+**/bin
+**/obj
+
+.vs
+.vscode
+
+.idea
