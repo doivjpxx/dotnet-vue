@@ -24,7 +24,7 @@
     </SolarButton>
     <SolarButton
       id="menuInvoices"
-      @button:click="goToRoute('/invoices')"
+      @button:click="goToRoute('/invoice/new')"
       :isFullWidth="true"
     >
       Invoices

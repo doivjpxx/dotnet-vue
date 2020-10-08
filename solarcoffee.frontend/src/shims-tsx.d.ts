@@ -11,3 +11,6 @@ declare global {
     }
   }
 }
+
+declare module "jsPdf";
+declare module "html2canvas";
