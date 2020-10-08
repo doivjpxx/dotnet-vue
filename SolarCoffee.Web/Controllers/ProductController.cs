@@ -22,6 +22,10 @@ namespace SolarCoffee.Web.Controllers
         [HttpPost("/api/product")]
         public ActionResult CreateProduct(ProductModel product)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             _logger.LogInformation("Create new product");
             var newProduct = ProductMapper.SerializeProductModel(product);
             var productRepsonse = _productService.CreateProduct(newProduct);
